@@ -86,7 +86,7 @@ const GameComponent: FunctionComponent<RouteComponentProps> = (props) => {
             setGame(_game);
             setCanRegister(false);
             setCanUnregister(true);
-        } catch (error) {
+        } catch (error: any) {
             if (error.code === 403) {
                 toast.error('Nu va puteti inregistra la joci in aceasta sala');
                 setCanRegister(false);

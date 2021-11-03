@@ -16,6 +16,7 @@ import LanguageContext from './context/languageContext';
 import strings, { setLanguage } from './services/localizationService';
 import UserContext from './context/userContext';
 import Player from './entities/player';
+import ProtectedRoute from './components/protectedRoute';
 
 function App() {
   const [language, setLanguageState] = useState(strings.getLanguage());
@@ -35,7 +36,7 @@ function App() {
             <NavigationBar />
             <span style={{ height: 40 }} />
             <Switch>
-              <Route path={routers.game} component={GameComponent} />
+              <ProtectedRoute path={routers.game} component={GameComponent} />
               <Route path={routers.games} component={GamesComponent} />
               <Route exact path={routers.clubs} component={HallsComponent} />
               <Redirect exact from={routers.home} to={routers.games} />

@@ -3,11 +3,18 @@ import React, { useState } from 'react';
 import AddAgendaModel from '../../models/addAgendaModel';
 import Hall from '../../entities/hall';
 import {DialogConfig, ContentComponentProps} from './dialogComponent';
+import gameService from '../../services/gameService';
+import CreateGameModel from '../../models/createGameModel';
 
-const config:DialogConfig<AddAgendaModel, boolean> = {
+const config:DialogConfig<CreateGameModel, boolean> = {
     Content:Content,
-    resolvedResult:(model) =>{
-        return Promise.resolve({succeeded:true});
+    resolvedResult:async(model) =>{
+        try {
+            await gameService.createGame(model);
+            return {succeeded:true};
+        } catch (error) {
+            return {succeeded:false, errors:['Something went wrong - please try later']}
+        }
     }
 }
 
