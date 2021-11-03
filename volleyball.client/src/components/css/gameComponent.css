@@ -1,0 +1,22 @@
+.gameItemContainer .buttonsContainer{
+    margin-Bottom: 25px;
+    display: flex;
+    flex-Direction: row-reverse;
+    margin-Right: 10px;
+    height: 50px;
+}
+
+.gameItemContainer .buttonsContainer .button{
+    margin-left: 10px;
+    margin-Right: 10px;
+}
+
+.gameItemContainer{
+    display: flex;
+    flex-Direction: column;
+    padding-Top: 15px;
+    padding-Bottom: 15px;
+    margin-Left: 10%;
+    margin-Right: 10%;
+    flex: 1;
+}

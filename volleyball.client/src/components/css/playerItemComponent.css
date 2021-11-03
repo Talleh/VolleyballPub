@@ -1,0 +1,20 @@
+.playerItemComponentContainer{
+    display: flex;
+    align-Content: center;
+    align-Items: center;
+    flex-Direction: column;
+    cursor: pointer
+}
+.avatar{
+    height: 60px;
+    width: 60px;
+    border-Radius: 50%;
+}
+.playerItemContainer{
+    display: flex;
+    flex-Direction: row;
+    flex-Wrap: wrap;
+    justify-Content: space-evenly;
+    flex: 1;
+    justify-Items: stretch
+}

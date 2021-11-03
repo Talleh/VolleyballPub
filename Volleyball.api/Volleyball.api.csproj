@@ -1,0 +1,78 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20210401083009_Add_HallTaxEntity.cs" />
+    <Compile Remove="Migrations\20210401083009_Add_HallTaxEntity.Designer.cs" />
+    <Compile Remove="Migrations\20210401083221_Add_PlayerAccountEntity.cs" />
+    <Compile Remove="Migrations\20210401083221_Add_PlayerAccountEntity.Designer.cs" />
+    <Compile Remove="Migrations\20210401083802_Add_HallTaxEntity.cs" />
+    <Compile Remove="Migrations\20210401083802_Add_HallTaxEntity.Designer.cs" />
+    <Compile Remove="Migrations\20210401084020_Add_PlayerAccountEntity.cs" />
+    <Compile Remove="Migrations\20210401084020_Add_PlayerAccountEntity.Designer.cs" />
+    <Compile Remove="Migrations\20210401084344_Add_HallTaxEntity.cs" />
+    <Compile Remove="Migrations\20210401084344_Add_HallTaxEntity.Designer.cs" />
+    <Compile Remove="Migrations\20210402063315_Update_ChangeCollectionType.cs" />
+    <Compile Remove="Migrations\20210402063315_Update_ChangeCollectionType.Designer.cs" />
+    <Compile Remove="Migrations\20210402065233_Add_InitialMigration.cs" />
+    <Compile Remove="Migrations\20210402065233_Add_InitialMigration.Designer.cs" />
+    <Compile Remove="Migrations\20210402070622_Add_HallEntity.cs" />
+    <Compile Remove="Migrations\20210402070622_Add_HallEntity.Designer.cs" />
+    <Compile Remove="Migrations\20210402071401_Add_HallEntity.cs" />
+    <Compile Remove="Migrations\20210402071401_Add_HallEntity.Designer.cs" />
+    <Compile Remove="Migrations\20210402072245_Add_HallAgendaEntity.cs" />
+    <Compile Remove="Migrations\20210402072245_Add_HallAgendaEntity.Designer.cs" />
+    <Compile Remove="Migrations\20210402073201_Add_HallAgendaEntity.cs" />
+    <Compile Remove="Migrations\20210402073201_Add_HallAgendaEntity.Designer.cs" />
+    <Compile Remove="Migrations\20210402073709_Add_GameEntity.cs" />
+    <Compile Remove="Migrations\20210402073709_Add_GameEntity.Designer.cs" />
+    <Compile Remove="Migrations\20210402074408_Add_GameEntity.cs" />
+    <Compile Remove="Migrations\20210402074408_Add_GameEntity.Designer.cs" />
+    <Compile Remove="Migrations\20210402075710_Add_GameEntity.cs" />
+    <Compile Remove="Migrations\20210402075710_Add_GameEntity.Designer.cs" />
+    <Compile Remove="Migrations\20210402080021_Update_GameEntity_AddPlayers.cs" />
+    <Compile Remove="Migrations\20210402080021_Update_GameEntity_AddPlayers.Designer.cs" />
+    <Compile Remove="Migrations\20210402080706_Remove_HallAgendaFromContext.cs" />
+    <Compile Remove="Migrations\20210402080706_Remove_HallAgendaFromContext.Designer.cs" />
+    <Compile Remove="Migrations\20210402092504_Update_AddAgendaToGame.cs" />
+    <Compile Remove="Migrations\20210402092504_Update_AddAgendaToGame.Designer.cs" />
+    <Compile Remove="Migrations\20210402092835_Add_HallAgendaEntity.cs" />
+    <Compile Remove="Migrations\20210402092835_Add_HallAgendaEntity.Designer.cs" />
+    <Compile Remove="Migrations\20210402092918_Add_GameAgendaEntity.cs" />
+    <Compile Remove="Migrations\20210402092918_Add_GameAgendaEntity.Designer.cs" />
+    <Compile Remove="Migrations\20210402093025_Add_HallEntity.cs" />
+    <Compile Remove="Migrations\20210402093025_Add_HallEntity.Designer.cs" />
+    <Compile Remove="Migrations\20210402093146_Add_GameEntity.cs" />
+    <Compile Remove="Migrations\20210402093146_Add_GameEntity.Designer.cs" />
+    <Compile Remove="Migrations\20210408085352_Update_ReplaceTypeOfAgendaInGame.cs" />
+    <Compile Remove="Migrations\20210408085352_Update_ReplaceTypeOfAgendaInGame.Designer.cs" />
+    <Compile Remove="Migrations\20210408090541_Update_InitialMigration.cs" />
+    <Compile Remove="Migrations\20210408090541_Update_InitialMigration.Designer.cs" />
+    <Compile Remove="Migrations\20210408090939_Add_Game.cs" />
+    <Compile Remove="Migrations\20210408090939_Add_Game.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="3.1.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.13" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+
+</Project>

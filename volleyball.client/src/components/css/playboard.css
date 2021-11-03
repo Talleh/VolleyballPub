@@ -1,0 +1,37 @@
+.container {
+    height: 200px;
+    width: 400px;
+  }
+  
+  img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .playSurface {
+    width: 75%;
+    height: 80%;
+    position: relative;
+    bottom: 79%;
+    left: 12%;
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  
+  .playerRow {
+    flex: 1;
+    display: flex;
+    height: 30%;
+    justify-content: space-evenly;
+  }
+  
+  .player {
+    height: 75%;
+    width: 10%;
+    border-radius: 50%;
+  }
+  .playerActive {
+    background-color: #c5c4c3;
+  }

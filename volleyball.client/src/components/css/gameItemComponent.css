@@ -1,0 +1,34 @@
+.gameItemContainer{
+    display: flex;
+    flex-Direction: column;
+    padding-Top: 15px;
+    padding-Bottom: 15px;
+    margin-Left: 10%;
+    margin-Right: 10%;
+    flex: 1;
+}
+.headerContainer{
+    background-Color: #62757b;
+    border-Radius: 25px;
+    margin-Bottom: 10px
+}
+.bodyContainer{
+    display: flex;
+    flex-Direction: row;
+    align-Items: center;
+    justify-Content: center;
+    flex: 1;
+}
+.timeContainer{
+    display: flex;
+    flex-Direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-Left: 15px;
+    padding-Right: 15px;
+}
+.gameCover{
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}

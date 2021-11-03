@@ -1,0 +1,26 @@
+.hallPlayer {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(78, 78, 250, 0.514);
+  border-radius: 15px;
+  padding: 20px;
+  flex: 1;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.hallPlayer img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.hallPlayer > * {
+  flex: 0.3;
+}
+.actionConainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.actionConainer .child {
+  margin-bottom: 10px;
+}
