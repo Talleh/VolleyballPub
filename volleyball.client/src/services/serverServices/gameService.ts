@@ -7,6 +7,7 @@ import localStorageService from "../localStorageService";
 import { localStorageKeys } from "../../constants";
 import PaginatedResult from "../../models/paginatedResult";
 import PaginationModel from "../../models/paginationModel";
+import CreateGameModel from "../../models/createGameModel";
 
 const baseUrl = "game";
 function getGame(id: number): Promise<Game> {
@@ -45,6 +46,10 @@ function canRegister(gameId: number): Promise<boolean> {
     return http.get(`${baseUrl}/${gameId}/canRegister`);
 }
 
+function createGame(game:CreateGameModel): Promise<boolean>{
+    return Promise.resolve(true);
+}
+
 const implemenation:GameService =
 {
     getGame,
@@ -54,6 +59,7 @@ const implemenation:GameService =
     unregisterFromGame,
     getFreePlayers,
     getTax,
-    canRegister
+    canRegister,
+    createGame
 };
 export default implemenation;

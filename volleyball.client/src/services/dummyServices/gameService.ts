@@ -7,6 +7,7 @@ import { localStorageKeys } from "../../constants";
 import {getLocalHall} from './hallService';
 import { DayOfWeek } from "../../entities/gameAgenda";
 import PaginatedResult from "../../models/paginatedResult";
+import CreateGameModel from '../../models/createGameModel';
 const games:Game[] = [{
     id:1,
     date:new Date(2021, 4, 7),
@@ -80,6 +81,10 @@ function canRegister(gameId: number): Promise<boolean> {
     return Promise.resolve(true);
 }
 
+function createGame(game:CreateGameModel): Promise<boolean>{
+    return Promise.resolve(true);
+}
+
 const implemenation:GameService =
 {
     getGame,
@@ -89,6 +94,7 @@ const implemenation:GameService =
     unregisterFromGame,
     getFreePlayers,
     getTax,
-    canRegister
+    canRegister,
+    createGame
 };
 export default implemenation;
